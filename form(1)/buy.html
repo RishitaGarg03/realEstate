@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Buyer Form</title>
+    <link rel="stylesheet" href="form-style.css">
+    <!--sell form: https://www.jotform.com/build/241843425724457-->
+    <!--buy form:https://form.jotform.com/241844697331463 -->
+</head>
+
+<body>
+    <!--FORM START-->
+    <div class="container">
+        <h1>House Buyer Form</h1>
+        <hr>
+        <p>Please fill out as much information as you can about your preferences so that we can help you find the perfect property.</p>
+        <form>
+            <div class="first">
+                <h2>Contact Information</h2>
+                <hr>
+
+                <div class="form-group group_1">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                    <input type="text" id="last-name" placeholder="Last Name" required>
+                </div>
+
+                <div class="form-group group_1">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="example@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="best-time-to-call">Best Time to Call</label>
+                    <input type="text" id="best-time-to-call">
+                </div>
+            </div>
+            <div class="second">
+                <h2>Property Preferences</h2>
+                <hr>
+                <div class="form-group">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type" required>
+                        <option value="">Select an option</option>
+                        <option value="single-family">Single Family</option>
+                        <option value="townhouse">Townhouse</option>
+                        <option value="condo">Condo</option>
+                        <option value="multi-family">Multi-Family</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-city">Preferred City</label>
+                    <input type="text" id="preferred-city" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-state">Preferred State / Province</label>
+                    <input type="text" id="preferred-state" required>
+                </div>
+                <div class="form-group">
+                    <label for="bedrooms">Number of Bedrooms</label>
+                    <input type="number" id="bedrooms" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="bathrooms">Number of Bathrooms</label>
+                    <input type="number" id="bathrooms" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="square-footage">Square Footage</label>
+                    <input type="number" id="square-footage" min="500" max="10000" required>
+                </div>
+                <div class="form-group">
+                    <label for="year-built">Preferred Year Built</label>
+                    <input type="number" id="year-built" min="1900" max="2023" required>
+                </div>
+                <div class="form-group">
+                    <label for="price-range">Price Range</label>
+                    <input type="number" id="price-range-min" placeholder="Min" required>
+                    <input type="number" id="price-range-max" placeholder="Max" required>
+                </div>
+                <div class="form-group">
+                    <label for="stories">How many stories?</label>
+                    <input type="number" id="stories" min="1" max="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="garage">Garage</label>
+                    <input type="text" id="garage" required>
+                </div>
+                <div class="form-group">
+                    <label for="property-condition">Preferred Condition of Property</label>
+                    <input type="text" id="property-condition" required>
+                </div>
+                <div class="form-group">
+                    <label for="moving-timeframe">When are you planning to move?</label>
+                    <input type="text" id="moving-timeframe" required>
+                </div>
+            </div>
+            <div class="third">
+                <h2>Additional Information</h2>
+                <hr>
+                <div class="form-group">
+                    <label for="specific-requirements">Do you have any specific requirements or features you are looking for?</label>
+                    <textarea id="specific-requirements" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-neighborhoods">Preferred Neighborhoods</label>
+                    <textarea id="preferred-neighborhoods" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="how-did-you-hear-about-us">How did you hear about us?</label>
+                    <textarea id="how-did-you-hear-about-us" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="questions-comments">Do you have any questions or comments you would like to share with us?</label>
+                    <textarea id="questions-comments" required></textarea>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

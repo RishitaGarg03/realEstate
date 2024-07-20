@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Seller Form</title>
+    <link rel="stylesheet" href="form-style.css">
+
+</head>
+
+<body>
+    <!--FORM START-->
+    <div class="container ">
+        <h1>House Seller Form</h1>
+        <hr>
+        <p>Please fill out as much information as you can about your property so that we can evaluate which program
+            might best suit your needs.</p>
+        <form>
+            <div class="first ">
+                <h2>Contact Information</h2>
+                <hr>
+
+                <div class="form-group group_1 ">
+                    <label for="full-name ">Full Name</label>
+                    <input type="text " id="first-name " placeholder="First Name " required>
+                    <input type="text " id="last-name " placeholder="Last Name " required>
+                </div>
+
+                <div class="form-group group_1 ">
+                    <label for="phone-number ">Phone Number</label>
+                    <input type="tel " id="phone-number " required>
+                </div>
+                <div class="form-group ">
+                    <label for="email ">E-mail</label>
+                    <input type="email " id="email " placeholder="example@example.com " required>
+
+                </div>
+
+                <div class="form-group ">
+                    <label for="best-time-to-call ">Best Time to Call</label>
+                    <input type="text " id="best-time-to-call ">
+                </div>
+            </div>
+            <div class="second ">
+                <h2>Property Information</h2>
+                <hr>
+                <div class="form-group ">
+                    <label for="property-address ">Property Address</label>
+                    <input type="text " id="property-address " required>
+                </div>
+                <div class="form-group ">
+                    <label for="property-city ">City</label>
+                    <input type="text " id="property-city " required>
+                </div>
+                <div class="form-group ">
+                    <label for="property-state ">State / Province</label>
+                    <input type="text " id="property-state " required>
+                </div>
+                <div class="form-group ">
+                    <label for="property-zip ">Zip / Postal Code</label>
+                    <input type="text " id="property-zip " required>
+                </div>
+                <div class="form-group ">
+                    <label for="property-type ">Property Type</label>
+                    <select id="property-type " required>
+                        <option value=" ">Select an option</option>
+                        <option value="single-family ">Single Family</option>
+                        <option value="townhouse ">Townhouse</option>
+                        <option value="condo ">Condo</option>
+                        <option value="multi-family ">Multi-Family</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label for="property-bedrooms ">Number of Bedrooms</label>
+                    <input type="number " id="property-bedrooms " min="1 " max="10 " required>
+                </div>
+                <div class="form-group ">
+                    <label for="property-bathrooms ">Number of Bathrooms</label>
+                    <input type="number " id="property-bathrooms " min="1 " max="10 " required>
+                </div>
+                <div class="form-group ">
+                    <label for="property-square-footage ">Square Footage</label>
+                    <input type="number " id="property-square-footage " min="500 " max="10000 " required>
+                </div>
+                <div class="form-group ">
+                    <label for="property-year-built ">Year Built</label>
+                    <input type="number " id="property-year-built " min="1900 " max="2023 " required>
+                </div>
+                <div class="form-group ">
+                    <label for="property-price ">Estimated Price</label>
+                    <input type="number " id="property-price " min="50000 " max="10000000 " required>
+                </div>
+                <div class="form-group ">
+                    <label for="stories ">How many stories?</label>
+                    <input type="number " id="stories " min="1 " max="5 " required>
+                </div>
+                <div class="form-group ">
+                    <label for="garage ">Garage</label>
+                    <input type="text " id="garage " required>
+                </div>
+                <div class="form-group ">
+                    <label for="property-condition ">What is the current condition of your property?</label>
+                    <input type="text " id="property-condition " required>
+                </div>
+                <div class="form-group ">
+                    <label for="ownership-years ">How many years have you owned this home?</label>
+                    <input type="number " id="ownership-years " min="1 " max="50 " required>
+                </div>
+                <div class="form-group ">
+                    <label for="repairs-needed ">What kind of repairs and maintenance does the house need?</label>
+                    <textarea id="repairs-needed " required></textarea>
+                </div>
+                <div class="form-group ">
+                    <label for="repair-cost ">How much do you think these repairs will cost in dollars?</label>
+                    <input type="number " id="repair-cost " min="100 " max="100000 " required>
+                </div>
+                <div class="form-group ">
+                    <label for="occupancy ">Is there anyone living in the house?</label>
+                    <select id="occupancy " required>
+                        <option value=" ">Select</option>
+                        <option value="Yes ">Yes</option>
+                        <option value="No ">No</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label for="listing-duration ">How long has the property been for sale?</label>
+                    <input type="text " id="listing-duration " required>
+                </div>
+                <div class="form-group ">
+                    <label for="realtor-listing ">Is the house currently listed with a Realtor?</label>
+                    <select id="realtor-listing " required>
+                        <option value=" ">Select</option>
+                        <option value="Yes ">Yes</option>
+                        <option value="No ">No</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label for="previous-listing ">If No, has the house been previously listed?</label>
+                    <select id="previous-listing " required>
+                        <option value=" ">Select</option>
+                        <option value="Yes ">Yes</option>
+                        <option value="No ">No</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label for="listing-expire ">If Yes, when does the listing expire?</label>
+                    <input type="date " id="listing-expire " required>
+                </div>
+                <div class="form-group ">
+                    <label for="situation ">What's your situation? Why are you selling?</label>
+                    <textarea id="situation " required></textarea>
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="housing-image ">Upload the image of your house below.
+                </label>
+                <input type="file" id="house-image" required style="background-color:  #fff;">
+            </div>
+            <div class="third ">
+                <h2>Pricing Information</h2>
+                <hr>
+                <div class="form-group ">
+                    <label for="house-value ">What do you think your house is worth?</label>
+                    <input type="number " id="house-value " min="50000 " max="10000000 " required>
+                </div>
+                <div class="form-group ">
+                    <label for="asking-price ">How much are you asking for your house?</label>
+                    <input type="number " id="asking-price" min="50000 " max="10000000 " required>
+                </div>
+                <div class="form-group ">
+                    <label for="value-determination ">How did you determine the value?</label>
+                    <textarea id="value-determination " required></textarea>
+                </div>
+                <div class="form-group ">
+                    <label for="lowest-acceptance ">What is the lowest amount you would accept if we closed quickly?
+                    </label>
+                    <input type="number " id="lowest-acceptance " min="50000 " max="10000000 " required>
+                </div>
+                <div class="form-group ">
+                    <label for="one-line-description">Describe the property in one line.</label>
+                    <input type="text " id="description" required>
+                </div>
+                <div class="form-group ">
+                    <label for="hearing-about-us ">How did you hear about us?</label>
+                    <textarea id="hearing-about-us " required></textarea>
+                </div>
+                <div class="form-group ">
+                    <label for="questions-comments ">Do you have any questions or comments you would like to share with
+                        us?</label>
+                    <textarea id="questions-comments " required></textarea>
+                </div>
+            </div>
+            <button type="submit " >Submit</button>
+        </form>
+    </div>
+    
+</body>
+
+</html>

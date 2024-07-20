@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navigation_bar">
+        <div class="left_nav">
+            <a href="index1.html">
+                <img src="web_images/logo.png" alt="@"> EstateEase
+            </a>
+        </div>
+        <div class="right_nav">
+            <input type="search" id="searchBar" placeholder="Search City">
+            <button class="search_button" type="submit" onclick="searchProperties()">Search</button>
+        </div>
+    </nav>
+
+    <!-- Options of buy,sell,rent -->
+    <div class="navbar_2">
+        <ul id="list">
+            <a href="form(1)/buy.html" target="_blank">
+                <li>Buy</li>
+            </a>
+            <a href="form(1)/rent.html" target="_blank">
+                <li>Rent</li>
+            </a>
+            <a href="form(1)/sell1.html" target="_blank">
+                <li>Sell</li>
+            </a>
+            <div class="right">
+                <a href="#footer"><img id="helpline" src="web_images/helpline.png" alt="Helpline">Contact for any query </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel">
+        <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="web_images/house4.jpeg" alt="House 1">
+            </div>
+            <div class="carousel-item">
+                <img src="web_images/house2.jpeg" alt="House 2">
+            </div>
+            <div class="carousel-item">
+                <img src="web_images/house3.jpeg" alt="House 3">
+            </div>
+            <div class="carousel-item">
+                <img src="web_images/house1.jpeg" alt="House 4">
+            </div>
+        </div>
+        <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
+    </div>
+
+    <!-- Gallery Containers -->
+    <div class="container_2"> 
+        <div class="row1">
+            <div class="col-img-left">
+                <img src="web_images/budget1.jpg" alt="error">
+            </div>
+
+            <div class="col-text">
+                <h2>Budget Home for you</h2>
+                <button onclick="explore('budget2')"><a href="gallery.html" target="_blank">Explore Now</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container_2"> 
+        <div class="row1">
+            <div class="col-text">
+                <h2>Affordable Rental PGs for you</h2>
+                <button onclick="explore('budget2')"><a href="gallery.html" target="_blank">Explore Now</a></button>
+            </div>
+
+            <div class="col-img-right">
+                <img src="web_images/budget2.jpg" alt="error">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container_2">
+        <div class="row1">
+            <div class="col-img-left">
+                <img src="web_images/budget3.jpg" alt="error">
+            </div>
+
+            <div class="col-text">
+                <h2>High-end Villas</h2>
+                <button onclick="explore('villas')"><a href="gallery.html" target="_blank">Explore Now</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container_2">
+        <div class="row1">
+            <div class="col-text">
+                <h2>Fully furnished Houses</h2>
+                <button onclick="explore('furnished')"><a href="gallery.html" target="_blank">Explore Now</a></button>
+            </div>
+
+            <div class="col-img-right">
+                <img src="web_images/budget4.jpg" alt="error">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container_2">
+        <div class="row1">
+            <div class="col-img-left">
+                <img src="web_images/helpline.png" alt="error" height="250px" width="80px">
+            </div>
+
+            <div class="col-text">
+                <h2>Trusted Agents</h2>
+                <button onclick="explore('agents')"><a href="gallery.html" target="_blank">Explore Now</a></button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer" id="footer">
+            <h4>About EstateEase</h4>
+            <p>This platform connects buyers and sellers. We assure you of a smooth experience under our guidance.</p>
+            <h4>Contact Us</h4>
+            <h5>Toll Free - 123-456-7890</h5>
+            <p>9.30 AM to 6.00 PM (Mon-Sun)</p>
+            <h5>Email - feedback@estateease.com</h5>
+            <h4>Connect with us</h4>
+            <div class="images">
+                <a href="#"><img src="web_images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="web_images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="web_images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="web_images/instagram.png" alt="instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main-scripts.js"></script>
+</body>
+</html>
+
+
